@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Průvod mezi nebem a zemí, údolím a vrchem, minulostí a budoucností vyráží opět za svou královnou. Maškary se v poledne setkají na roztockém zámku, spojí s Únětickými a Suchdolskými tancem na pláni Holého vrchu a zakončí svou cestu zábavou v pravém a nefalšovaném vyhřívaném šapitó.">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:700&amp;subset=latin-ext" rel="stylesheet">
+
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
+        <div class="container">
+            <nav class="navbar navbar-expand flex-column flex-md-row justify-content-center justify-content-md-between flex-wrap" role="navigation">
+                <a class="navbar-brand" href="/">
+                </a>
+                <div class="navbar-nav">
+                    {% block nav %}
+                        {% include '__nav.twig' %}
+                    {% endblock %}
+                </div>
+            </nav>
+        </div>
+
 {% block content %}{% endblock %}
+
 {#
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS and your own script at the end -->

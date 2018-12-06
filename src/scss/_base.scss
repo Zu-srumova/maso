@@ -1,0 +1,21 @@
+h1, .h1, h2, .h2, h3, .h3 {
+    padding-top: 1em; 
+    padding-bottom: 0.5em; 
+    letter-spacing: 0.07em; 
+    font-weight: 700; 
+    font-family: "Roboto Slab", sans-serif;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+.maso-mask-card {
+    width: 20rem;
+    border: 0;
+}
+
+.maso-mask-card-title {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+}
