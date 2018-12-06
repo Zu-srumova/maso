@@ -1,19 +1,27 @@
 {% extends '_base.twig' %}
 
 
-{% block title %}Index page{% endblock %}
+{% block title %}Masopust v Roztokách a Úněticích 2019{% endblock %}
 
+{% block nav %}
+{% include '__nav.twig' with {'active': 'home'} %}
+{% endblock %}
 
 {% block content %}
     <div class="container">
-        <div class="row">
-            <div class="col p-4">
-                <h1>This a basic template to start a website based on Bootstrap&nbsp;{{ bootstrapVersion }}</h1>
-                <p>
-                    Also check out <a href="example-page-1" class="btn btn-success btn-lg">Example page 1</a>
-                    and <a href="example-page-2" class="btn btn-danger btn-lg">Example page 2</a>.
-                </p>
-            </div>
+        <div>
+            <h1>Masopust v Roztokách a Úněticích</h1>
+            <p>16. února 2019</p>
         </div>
+        <p>Průvod mezi nebem a zemí, údolím a vrchem, minulostí a budoucností vyráží opět za svou královnou. Maškary se v poledne setkají na roztockém zámku, spojí s Únětickými a Suchdolskými tancem na pláni Holého vrchu a zakončí svou cestu zábavou v pravém a nefalšovaném vyhřívaném šapitó.</p>
+
+        <div>
+            <a href="/program">Program</a>
+            <a href="/o-masopustu">O roztockém masopustu</a>
+            <a href="/maskary">Maškary a masky</a>
+            <a href="/program">Program</a>
+            <a href="/kontakt">Kontakt</a>
+        </div>
+        <p>Masopust pořádá Sdružení Roztoč spolu s městem Roztoky, ve spolupráci se Středočeským muzeem v Roztokách, spolkem pro obnovu Únětické kultury a městskou částí Praha-Suchdol.</p>
     </div>
 {% endblock %}
