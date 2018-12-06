@@ -1,21 +1,81 @@
-h1, .h1, h2, .h2, h3, .h3 {
-    padding-top: 1em; 
+body {
+    background-color: #E8D3B8;
+    background-image: url("img/grafiky/back.png");
+    background-repeat: repeat;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    padding-top: 0.5em; 
     padding-bottom: 0.5em; 
     letter-spacing: 0.07em; 
     font-weight: 700; 
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Roboto Slab", serif;
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 p {
     line-height: 1.65em;
+
+a:hover {
+    text-decoration: underline;
+    color: #C90027;
+    }
+}
+
+.maso-nav-lista {
+    background-color: #212529;
+}
+
+.nav-link {
+    color: #E8D3B8;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.maso-header-img-cont {
+    overflow: hidden;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.maso-header-img {
+
+}
+
+.maso-anotace {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.maso-plate {
+    background-color: RGBA(256,256,256,0.2);
+    border: 1px solid RGB(232,211,184);
+    padding: 0 1em;
+    margin: 2rem;
 }
 
 .maso-mask-card {
-    width: 20rem;
+    width: 22rem;
     border: 0;
+    background-color: RGBA(232,211,184,0)
+
 }
 
 .maso-mask-card-title {
     font-size: 1.25rem;
     padding-bottom: 0;
+}
+
+.maso-contact-name {
+    font-weight: 700;
+    margin-bottom: 0;
 }
