@@ -18,11 +18,13 @@ h1 {
 
 p {
     line-height: 1.65em;
+}
 
-a:hover {
+/* Navigace nahoře*/
+
+.nav-linka:hover {   /*Nefunguje. Můžete mi někdo vysvětlit, proč?*/
     text-decoration: underline;
     color: #C90027;
-    }
 }
 
 .maso-nav-lista {
@@ -36,9 +38,8 @@ a:hover {
     font-family: "Roboto Slab", serif;
     text-transform: uppercase;
     text-decoration: none;
+    margin-left: 1em;
 }
-
-
 
 .maso-header-img-cont {
     overflow: hidden;
@@ -78,4 +79,31 @@ a:hover {
 .maso-contact-name {
     font-weight: 700;
     margin-bottom: 0;
+}
+
+
+/*Footer s logama */
+
+.maso-sekce-loga {
+    background-color: #212529;
+    margin-top: 2rem;
+}
+
+.maso-sekce-loga h2 {
+    color: #E8D3B8;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 2em;
+}
+
+.maso-sekce-loga p {
+    margin: 0;
+    color: #E8D3B8;
+}
+
+.maso-sekce-loga a {
+    color: #E8D3B8;
 }
