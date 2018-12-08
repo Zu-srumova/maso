@@ -12,18 +12,26 @@
 </head>
 
 <body>
-        <div class="container">
-            <nav class="navbar navbar-expand flex-column flex-md-row justify-content-center justify-content-md-between flex-wrap maso-nav-lista" role="navigation">
-                <a class="navbar-brand" href="/">
-                </a>
-                <div class="navbar-nav">
-                    {% block nav %}
-                        {% include '__nav.twig' %}
-                    {% endblock %}
-                </div>
-            </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand flex-column flex-md-row justify-content-center justify-content-md-between flex-wrap maso-nav-lista" role="navigation">
+            <a class="navbar-brand" href="/">
+            </a>
+            <div class="navbar-nav flex-wrap">
+                {% block nav %}
+                    {% include '__nav.twig' %}
+                {% endblock %}
+            </div>
+        </nav>
+    
+        {% block content %}{% endblock %}
+    </div> 
+        <div class="maso-sekce-loga">
+            {% block loga %}
+                {% include '__loga.twig' %}
+            {% endblock %}
         </div>
-{% block content %}{% endblock %}
+    
+        
 
 {#
 <!-- Optional JavaScript -->
@@ -33,5 +41,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="js/custom.js"></script>
 #}
+
 </body>
 </html>
