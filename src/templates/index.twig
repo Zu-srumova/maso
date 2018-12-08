@@ -7,7 +7,24 @@
 
 {% block content %}
     <div class="maso-header-img-cont">
-        <img src="img/ilustracni/maso2019.jpg" alt="Roztocký Masopust 2019 se blíží!" class="img-fluid maso-header-img">
+        <img
+        sizes="
+        (min-width: 1200px) 1110px, 
+        (min-width: 992px) 930px, 
+        (min-width: 768px) 690px, 
+        (min-width: 576px) 510px, 
+        calc(100vw-30px)"
+        srcset="
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_300.jpg 300w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_513.jpg 513w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_683.jpg 683w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_834.jpg 834w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_964.jpg 964w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_1090.jpg 1090w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_1214.jpg 1214w,
+        img/ilustracni/maso2019_nc9vgq_c_scale,w_1560.jpg 1560w"
+        src="img/ilustracni/maso2019_nc9vgq_c_scale,w_964.jpg"
+        alt="Roztocký Masopust 2019 se blíží!" class="img-fluid maso-header-img">
     </div>
 
     <div>
