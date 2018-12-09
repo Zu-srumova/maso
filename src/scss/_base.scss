@@ -12,7 +12,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     font-family: "Roboto Slab", serif;
 }
 
-h1 {
+h1, .h1 {
     text-transform: uppercase;
 }
 
@@ -107,4 +107,9 @@ p {
 
 .maso-sekce-loga a {
     color: #E8D3B8;
+}
+
+#maso-pruvod-nadpis {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
