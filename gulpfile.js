@@ -152,5 +152,18 @@ gulp.task(
     })
 );
 
+gulp.task(
+    "deploy-prod",
+    gulp.series("build", function surgeDeploy() {
+        return surge({
+            project: "dist",
+            // change to your domain
+            domain: "http://masopust.roztoc.cz"
+            // note 1: URL must end .surge.sh if you haven’t bought yours and configured DNS
+            // note 2: https for custom domains is a paid feature
+        });
+    })
+);
+
 // Set develop as a default task (Gulp runs this when you don't specify a task)
 gulp.task("default", gulp.series("develop"));
