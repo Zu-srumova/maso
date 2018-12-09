@@ -38,12 +38,12 @@ p {
 
 .nav-link {
     color: #E8D3B8;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     font-weight: 700;
     font-family: "Roboto Slab", serif;
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 1em;
+    padding: 3px;
 }
 
 .maso-header-img-cont {
@@ -112,4 +112,19 @@ p {
 #maso-pruvod-nadpis {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+@media only screen and (min-width:992px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px;
+        margin-left: 0.75em;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .nav-link {
+        font-size: 1.25rem;
+        margin-left: 1em;
+    }
 }
