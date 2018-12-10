@@ -1,6 +1,6 @@
 body {
     background-color: #E8D3B8;
-    background-image: url("img/grafiky/back.png");
+    background-image: url("img/grafiky/back.jpg");
     background-repeat: repeat;
 }
 
@@ -21,6 +21,11 @@ p {
 }
 
 .maso-name {
+    font-weight: 700;
+    color: #C90027;
+}
+
+.maso-name a {
     font-weight: 700;
     color: #C90027;
 }
@@ -88,6 +93,7 @@ p {
 .maso-sekce-loga {
     background-color: #212529;
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .maso-sekce-loga h2 {
@@ -107,6 +113,11 @@ p {
 
 .maso-sekce-loga a {
     color: #E8D3B8;
+}
+
+.maso-print {
+    display: none;
+    padding-top: 2rem;
 }
 
 #maso-majdy-mapa {
@@ -132,3 +143,13 @@ p {
         margin-left: 1em;
     }
 }
+
+@media print {
+    .maso-header-img, .maso-sekce-loga, .maso-no-print {
+        display: none;
+    }
+
+    .maso-print {
+        display: block;
+    }
+  }
