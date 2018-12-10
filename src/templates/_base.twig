@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs-CZ">
 
 <head>
     <meta charset="utf-8">
@@ -30,10 +30,13 @@
                 {% endblock %}
             </div>
         </nav>
-    
+        <div role="main">
         {% block content %}{% endblock %}
+        </div>
+        <p class="maso-print">Nebylo zbytečné to tisknout, když to hned ztratíš?<br>Masopust v Roztokách u Prahy – 16. února 2019 - - - pořádá Sdružení Roztoč, z.s. - - - masopust.roztoc.cz</p>
     </div> 
-        <div class="maso-sekce-loga">
+    
+        <div class="maso-sekce-loga" role="complementary">
             {% block loga %}
                 {% include '__loga.twig' %}
             {% endblock %}
