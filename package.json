@@ -28,7 +28,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp develop",
     "build": "gulp build",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "deploy-prod": "gulp deploy-prod"
   },
   "prettier": {
     "printWidth": 120
