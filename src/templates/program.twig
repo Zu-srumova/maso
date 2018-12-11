@@ -3,6 +3,9 @@
 
 {% block title %}Program masopustu 2019{% endblock %}
 
+{% block nav %}
+{% include '__nav.twig' with {'active': 'program'} %}
+{% endblock %}
 
 {% block content %}
     <div class="maso-header-img-cont">
@@ -39,7 +42,7 @@
 
     <h2>Středočeské muzeum v&nbsp;Roztokách</h2>
     <ul>
-        <li><strong>od 11.00</strong> <a href="/maskary">Půjčování masek</a> z&nbsp;bohatého fondu Sdružení&nbsp;Roztoč (výhradně pro&nbsp;ty, kteří dojdou až&nbsp;do&nbsp;Šapitó)</li>
+        <li><strong>od 11.00</strong> <a href="/maskary" class="maso-name">Půjčování masek</a> z&nbsp;bohatého fondu Sdružení&nbsp;Roztoč (výhradně pro&nbsp;ty, kteří dojdou až&nbsp;do&nbsp;Šapitó)</li>
         <li><strong>12.00</strong> <span class="maso-name">Slavnostní narážení Únětického Masopustního speciálu</span>;<br>začíná rej a&nbsp;hemžení maškar s&nbsp;bohatým programem – divadla, kapely, kejklíři</li>
         <li><strong>14.00</strong> <span class="maso-name">Korunovace Královny Masopustu</span> a&nbsp;předání masopustního práva, Krásné&nbsp;fanfáry, <a href="http://localvocal.cz/">Local&nbsp;Vocal</a></li>
     </ul>
