@@ -32,11 +32,6 @@ p {
 
 /* Navigace nahoře*/
 
-.nav-linka:hover {   /*Nefunguje. Můžete mi někdo vysvětlit, proč?*/
-    text-decoration: underline;
-    color: #C90027;
-}
-
 .maso-nav-lista {
     background-color: #212529;
 }
@@ -49,6 +44,23 @@ p {
     text-transform: uppercase;
     text-decoration: none;
     padding: 3px;
+
+    &:hover,
+    &:active, 
+    &.active {
+        color: #C90027
+    }
+
+    @media only screen and (min-width:992px) {
+        font-size: 1rem;
+        padding: 8px;
+        margin-left: 0.75em;
+    }
+    
+    @media only screen and (min-width:1200px) {
+        font-size: 1.25rem;
+        margin-left: 1em;
+    }
 }
 
 .maso-header-img-cont {
@@ -129,24 +141,9 @@ p {
     margin-bottom: 0;
 }
 
-@media only screen and (min-width:992px) {
-    .nav-link {
-        font-size: 1rem;
-        padding: 8px;
-        margin-left: 0.75em;
-    }
-}
-
 @media only screen and (max-width:992px) {
     .navbar {
         position: relative;
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    .nav-link {
-        font-size: 1.25rem;
-        margin-left: 1em;
     }
 }
 
