@@ -3,6 +3,9 @@
 
 {% block title %}Kontakt{% endblock %}
 
+{% block nav %}
+{% include '__nav.twig' with {'active': 'kontakt'} %}
+{% endblock %}
 
 {% block content %}
 <div class="maso-header-img-cont">
@@ -44,7 +47,7 @@
     </div>
     <div class="card maso-mask-card">
         <div class="card-body">
-            <h2 class="card-title maso-mask-card-title">Propagace</h2>
+            <h2 class="card-title maso-mask-card-title">Propagace, web, FB</h2>
             <p class="card-text maso-contact-name">Zuzana Šrůmová</p>
             <a href="mailto:zuzana.srumova@roztoc.cz" class="card-link">zuzana.srumova@roztoc.cz</a><br><a href="tel:+420777852195" class="card-link">777&nbsp;852&nbsp;195</a>
         </div>
@@ -68,6 +71,18 @@
             <h2 class="card-title maso-mask-card-title">Organizace průvodu</h2>
             <p class="card-text maso-contact-name">Ondřej Marek</p>
             <a href="mailto:omarek@volny.cz" class="card-link">omarek@volny.cz</a><br><a href="tel:+420777793737" class="card-link">777&nbsp;793&nbsp;737</a>
+        </div>
+    </div>
+    <div class="card maso-mask-card">
+        <div class="card-body">
+            <h2 class="card-title maso-mask-card-title">Technická sekce</h2>
+            <p class="card-text maso-contact-name">Pavel Tichý</p>
+        </div>
+    </div>
+    <div class="card maso-mask-card">
+        <div class="card-body">
+            <h2 class="card-title maso-mask-card-title">Konstrukce a věšení</h2>
+            <p class="card-text maso-contact-name">Jonáš Tichý</p>
         </div>
     </div>
 </div>       
