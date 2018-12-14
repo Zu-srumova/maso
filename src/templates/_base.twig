@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="cs">
+
+<html lang="{% block lang %}cs{% endblock %}">
 
 <head>
     <meta charset="utf-8">
@@ -37,12 +38,53 @@
         </div>
         <p class="maso-print">Nebylo zbytečné to tisknout, když to hned ztratíš?<br>Masopust v Roztokách u Prahy – 16. února 2019 - - - pořádá Sdružení Roztoč, z.s. - - - masopust.roztoc.cz</p>
     </div> 
+
     
-        <div class="maso-sekce-loga" role="complementary">
-            {% block loga %}
-                {% include '__loga.twig' %}
+    <div class="maso-sekce-loga" role="complementary">
+        <div class="container">
+            {% block organizers %}
+                <h2>Masopust pořádá <a href="http://www.roztoc.cz/">Sdružení&nbsp;Roztoč, z.s.</a></h2>
+                <p>…ve spolupráci s&nbsp;<a href="https://www.roztoky.cz/">městem&nbsp;Roztoky</a>, <a href="https://www.muzeum-roztoky.cz">Středočeským&nbsp;muzeem v&nbsp;Roztokách u&nbsp;Prahy</a>, <a href="http://www.unetice.cz/">obcí&nbsp;Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">Městskou částí Praha-Suchdol.</a></p>
             {% endblock %}
+
+                <div class="row maso-footer">
+                    <div class="card maso-logo-card">
+                        <div class="card-body">
+                            <a href="http://www.roztoc.cz"><img src="svg\roztoc.min.svg" width="150"></a>
+                        </div>
+                    </div>
+                    <div class="card maso-logo-card">
+                        <div class="card-body">
+                            <a href="http://www.roztoky.cz"><img src="svg\roztoky.min.svg" width="100"></a>
+                        </div>
+                    </div>
+                    <div class="card maso-logo-card">
+                        <div class="card-body">
+                            <a href="https://www.muzeum-roztoky.cz"><img src="svg\logo-muzeum.svg" width="200"></a>
+                        </div>
+                    </div>
+                    <div class="card maso-logo-card">
+                        <div class="card-body">
+                            <a href="http://www.unetice.cz/"><img src="svg\un-min.svg" width="60"></a>
+                        </div>
+                    </div>
+                    <div class="card maso-logo-card">
+                        <div class="card-body">
+                            <a href="https://www.praha-suchdol.cz/"><img src="svg\suchdol-min.svg" width="230"></a>
+                        </div>
+                    </div>
+                </div>
+                
+            {% block sponsors %}   
+                <h2>Masopust podpořili</h2>
+                <p><a href="https://m.prg.aero">Letiště Václava Havla Praha</a>, Středočeský kraj, město Roztoky a mnoho dalších dárců.</p>
+            {% endblock %}
+
+        {% block loga %}
+            {% include '__loga.twig' %}
+        {% endblock %}
         </div>
+    </div>
     
         
 
