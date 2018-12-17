@@ -38,12 +38,12 @@ p {
 
 .nav-link {
     color: #E5D3B7;
-    font-size: 0.75rem;
     font-weight: 700;
+    font-size: 1rem;
     font-family: "Roboto Slab", serif;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 3px;
+    
 
     &:hover,
     &:active, 
@@ -52,13 +52,11 @@ p {
     }
 
     @media only screen and (min-width:992px) {
-        font-size: 1rem;
-        padding: 8px;
-        margin-left: 0.75em;
+        font-size: 1.25rem;
+        margin-left: 1em;
     }
     
     @media only screen and (min-width:1200px) {
-        font-size: 1.25rem;
         margin-left: 1em;
     }
 }

@@ -24,15 +24,23 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand flex-column flex-md-row justify-content-center justify-content-md-between flex-wrap maso-nav-lista sticky-top" role="navigation">
+        <nav class="navbar navbar-expand-md navbar-light justify-content-between maso-nav-lista sticky-top">
             <a class="nav-link" href="/">Masopust</a>
-
-            <div class="navbar-nav flex-wrap">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#masostranky" aria-controls="masostranky" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav-link">menu</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="masostranky">
                 {% block nav %}
                     {% include '__nav.twig' %}
                 {% endblock %}
             </div>
+            {% block navlang %}
+                <a class="nav-link" href="/en">[en]</a>
+            {% endblock %}
         </nav>
+
         <div role="main">
         {% block content %}{% endblock %}
         </div>
