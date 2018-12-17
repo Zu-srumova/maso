@@ -1,0 +1,19 @@
+{% block lang %}en{% endblock %}
+
+{% block nav %}
+    <a class="nav-link {% if active=='schedule' %}active{% endif %}" href="/schedule">Schedule</a>
+    <a class="nav-link {% if active=='masks' %}active{% endif %}" href="/masks">Masks</a>
+    <a class="nav-link {% if active=='about' %}active{% endif %}" href="/about">About</a>
+    <a class="nav-link {% if active=='contact' %}active{% endif %}" href="/contact">Contact</a>
+    <a class="nav-link pl-0 {% if active=='en' %}active{% endif %}" href="/">[cs]</a>
+{% endblock %}
+
+{% block organizers %}
+    <h2>Masopust/Carnival is organized by <a href="http://www.roztoc.cz/">Sdružení&nbsp;Roztoč, z.s.</a></h2>
+    <p>…together with <a href="https://www.roztoky.cz/">the town of Roztoky</a>, <a href="https://www.muzeum-roztoky.cz">Central Bohemian Museum in Roztoky u Prahy</a>, <a href="http://www.unetice.cz/">the village of Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">Prague-Suchdol.</a></p>
+{% endblock %}
+
+{% block sponsors %}   
+    <h2>Sponsored by</h2>
+    <p><a href="https://m.prg.aero">Václav Havel Airport Prague</a>, Středočeský kraj, the town of Roztoky and many more.</p>
+{% endblock %}
