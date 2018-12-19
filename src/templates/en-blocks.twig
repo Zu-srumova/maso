@@ -5,7 +5,10 @@
     <a class="nav-link {% if active=='masks' %}active{% endif %}" href="/masks">Masks</a>
     <a class="nav-link {% if active=='about' %}active{% endif %}" href="/about">About</a>
     <a class="nav-link {% if active=='contact' %}active{% endif %}" href="/contact">Contact</a>
-    <a class="nav-link pl-0 {% if active=='en' %}active{% endif %}" href="/">[cs]</a>
+{% endblock %}
+
+{% block navlang %}
+    <a class="nav-link" href="/">[cs]</a>
 {% endblock %}
 
 {% block organizers %}
