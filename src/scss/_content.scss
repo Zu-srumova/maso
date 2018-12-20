@@ -1,0 +1,40 @@
+.maso-header-img-cont {
+    overflow: hidden;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.maso-anotace {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.maso-excursion {
+    background-color: RGBA(256,256,256,0.2);
+    border: 1px dotted #fff;
+    padding: 0 1em;
+    margin: 2rem;
+}
+
+.maso-mask-card {
+    width: 22rem;
+    border: 0;
+    background-color: RGBA(232,211,184,0)
+}
+
+.maso-mask-card-title {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+}
+
+.maso-contact-name {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#maso-pruvod-nadpis { // todo: predelat na tridu
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+

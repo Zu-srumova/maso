@@ -1,0 +1,47 @@
+.maso-nav-lista {
+    background-color: #212529;
+}
+
+.navbar-toggler {
+    
+    &:hover,
+    &:focus,
+    &:active, 
+    &.active {
+        border: 1px solid #E5D3B7;
+        outline: none;
+    }
+}
+
+.nav-link {
+    color: #E5D3B7;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active, 
+    &.active {
+        color: #C90027;
+        border: none;
+        outline: none;
+    }
+
+    @media only screen and (min-width:992px) {
+        font-size: 1rem;
+        margin-left: 0.85em;
+    }
+    
+    @media only screen and (min-width:1200px) {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .navbar {
+        position: relative;
+    }
+}
