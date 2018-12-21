@@ -71,34 +71,14 @@
                 <p>…ve spolupráci s&nbsp;<a href="https://www.roztoky.cz/">městem&nbsp;Roztoky</a>, <a href="https://www.muzeum-roztoky.cz">Středočeským&nbsp;muzeem v&nbsp;Roztokách u&nbsp;Prahy</a>, <a href="http://www.unetice.cz/">obcí&nbsp;Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">Městskou částí Praha-Suchdol.</a></p>
             {% endblock %}
 
-                <div class="row maso-footer">
-                    <div class="card maso-logo-card">
-                        <div class="card-body">
-                            <a href="http://www.roztoc.cz"><img src="/svg/roztoc.min.svg" width="150"></a>
-                        </div>
-                    </div>
-                    <div class="card maso-logo-card">
-                        <div class="card-body">
-                            <a href="http://www.roztoky.cz"><img src="/svg/roztoky.min.svg" width="100"></a>
-                        </div>
-                    </div>
-                    <div class="card maso-logo-card">
-                        <div class="card-body">
-                            <a href="https://www.muzeum-roztoky.cz"><img src="/svg/logo-muzeum.svg" width="200"></a>
-                        </div>
-                    </div>
-                    <div class="card maso-logo-card">
-                        <div class="card-body">
-                            <a href="http://www.unetice.cz/"><img src="/svg/un-min.svg" width="60"></a>
-                        </div>
-                    </div>
-                    <div class="card maso-logo-card">
-                        <div class="card-body">
-                            <a href="https://www.praha-suchdol.cz/"><img src="/svg/suchdol-min.svg" width="230"></a>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="row maso-footer align-items-center">
+                <a href="http://www.roztoc.cz" class="col-xs-1 text-center p-3 pr-5"><img src="/svg/roztoc.min.svg" width="120"></a>
+                <a href="http://www.roztoky.cz" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/roztoky.min.svg" width="70"></a>
+                <a href="https://www.muzeum-roztoky.cz" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/logo-muzeum.svg" width="220"></a>
+                <a href="http://www.unetice.cz/" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/un-min.svg" width="60"></a>
+                <a href="https://www.praha-suchdol.cz/" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/suchdol-min.svg" width="300"></a>
+            </div>
+
             {% block sponsors %}   
                 <h2>Masopust podpořili</h2>
                 <p><a href="https://m.prg.aero">Letiště Václava Havla Praha</a>, <a href="https://www.kr-stredocesky.cz/">Středočeský kraj</a>, <a href="http://www.roztoky.cz">město Roztoky</a>, <a href="https://www.prague-catering.cz/">Prague Catering</a>, <a href="http://blahasro.cz">Bláha, s.r.o.</a>, <a href="www.k2m.cz">K2M reklama</a>, <a href="http://thingumajig.info/">Andrew Kim &amp; Thingumajig Theatre</a> a mnoho dalších dárců a pomocníků.</p>
@@ -107,6 +87,7 @@
         {% block loga %}
             {% include '__loga.twig' %}
         {% endblock %}
+        <p class="font-italic pt-4">Fotografie na tomto masowebu mají na svědomí <a href="http://dobresvetlo.com/">Vít Švajcr – Dobré světlo</a>, <a href="http://janhromadko.com/">Jan Hromádko</a>, <a href="https://www.janfaukner.com/">Jan Faukner</a> a Jakub Souček.</p>
         </div>
     </div>
     
