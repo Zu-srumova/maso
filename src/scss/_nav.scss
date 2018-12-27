@@ -3,6 +3,11 @@
 }
 
 .navbar-toggler {
+    padding: 0.25rem;
+
+    @media only screen and (min-width:576px) {
+        padding: 0.25rem 1rem;
+    }
     
     &:hover,
     &:focus,
@@ -16,10 +21,11 @@
 .nav-link {
     color: #E5D3B7;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Roboto Slab", serif;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0.5rem;
 
     &:hover,
     &:focus,

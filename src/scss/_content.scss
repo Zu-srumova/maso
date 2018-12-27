@@ -6,15 +6,22 @@
 }
 
 .maso-anotace {
-    font-size: 1.2rem;
     font-weight: 700;
+    
+    @media only screen and (min-width:576px) {
+    font-size: 1.2rem;
+    }
 }
 
 .maso-excursion {
     background-color: RGBA(256,256,256,0.2);
     border: 1px dotted #fff;
     padding: 0 1em;
-    margin: 2rem;
+    margin: 0.5rem;
+
+    @media only screen and (min-width:768px) {
+        margin: 2rem;
+    }
 }
 
 .maso-mask-card {
@@ -33,7 +40,7 @@
     margin-bottom: 0;
 }
 
-#maso-pruvod-nadpis { // todo: predelat na tridu
+.maso-pruvod-nadpis {
     padding-bottom: 0;
     margin-bottom: 0;
 }
