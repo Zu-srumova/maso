@@ -46,15 +46,24 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#masostranky" aria-controls="masostranky" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="nav-link">menu</span>
             </button>
+
+            <div class="d-md-none">
+                {% block navlang %}
+                    <a class="nav-link" href="/en">[en]</a>
+                {% endblock %}
+            </div>
             
             <div class="collapse navbar-collapse" id="masostranky">
                 {% block nav %}
                     {% include '__nav.twig' %}
                 {% endblock %}
             </div>
-            {% block navlang %}
-                <a class="nav-link" href="/en">[en]</a>
-            {% endblock %}
+
+            <div class="d-none d-md-block">
+                {% block navlang %}
+                    <a class="nav-link" href="/en">[en]</a>
+                {% endblock %}
+            </div>
         </nav>
 
         <div role="main">
