@@ -7,10 +7,18 @@
 
 .maso-anotace {
     font-weight: 700;
-    
     @media only screen and (min-width:576px) {
     font-size: 1.2rem;
     }
+}
+
+.maso-button {
+    max-width: 30em;
+    background-color: #212529;
+    color: #E5D3B7;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .maso-excursion {
