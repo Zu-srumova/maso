@@ -4,11 +4,8 @@
     <meta property="og:image" content="http://masopust.roztoc.cz/img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_980.jpg">
     <meta property="og:title" content="Program Masopustu v&nbsp;Roztokách 16.&nbsp;února 2019">
     <meta property="og:description" content="Průvod mezi nebem a&nbsp;zemí, údolím a&nbsp;vrchem, minulostí a&nbsp;budoucností vyráží opět za svou královnou. Maškary se v&nbsp;poledne setkají na roztockém zámku, spojí s&nbsp;Únětickými a&nbsp;Suchdolskými tancem na pláni Holého vrchu a&nbsp;zakončí svou cestu zábavou v&nbsp;pravém a&nbsp;nefalšovaném vyhřívaném šapitó.">
-    <meta property="og:type" content="website">
-    <meta property="fb:app_id" content="123456789">
     <meta property="og:url" content="http://masopust.roztoc.cz/program">
-    <meta name="twitter:card" content="summary">
-{% endblock %}
+    {% endblock %}
 
 {% block title %}Program masopustu 2019{% endblock %}
 
@@ -26,50 +23,49 @@
             (min-width: 576px) 510px,
             calc(100vw-30px)"
             srcset="
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_300.jpg 300w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_577.jpg 577w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_792.jpg 792w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_980.jpg 980w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1144.jpg 1144w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1298.jpg 1298w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1376.jpg 1376w,
-            img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1920.jpg 1920w"
-            alt="Maškary roztockého Masopustu na Holém vrchu" class="img-fluid maso-header-img">
-        <img src="img/ilustracni/hromadko-2016.jpg" alt="Průvod s bubeníky Blabuburo, roztocký Masopust 2016" class="img-fluid maso-header-img">
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_300.jpg 300w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_577.jpg 577w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_792.jpg 792w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_980.jpg 980w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1144.jpg 1144w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1298.jpg 1298w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1376.jpg 1376w,
+           /img/ilustracni/hromadko-2016_pbrjnv_c_scale,w_1920.jpg 1920w"
+            src="/img/ilustracni/hromadko-2016.jpg" alt="Průvod s bubeníky Blabuburo, roztocký Masopust 2016" class="img-fluid maso-header-img">
     </div>
 
     {% block text %}
         <!-- <h1>Program Masopustu</h1> -->
 
-        <div class="maso-plate maso-no-print">
+        <div class="maso-excursion d-print-none">
             <h2 class="h3">Masopustní obchůzka</h2>
-            <p class="maso-name">9.&nbsp;února&nbsp;2019</p>
+            <p class="maso-em">9.&nbsp;února&nbsp;2019</p>
             <p><strong>Obchůzka ctihodných maškar po Roztockých domácnostech proběhne týden před masopustním průvodem.</strong></p>
             <p>Procházet bude Tichým údolím a&nbsp;okolím – a&nbsp;kdo ji dobře uvítá a&nbsp;pohostí, tomu se příští rok dobře povede.</p>
         </div>
 
-        <h1 id="maso-pruvod-nadpis">Masopust v&nbsp;Roztokách a&nbsp;Úněticích</h1>
-        <p class="h3 maso-name">&nbsp;16.&nbsp;února&nbsp;2019</p>
+        <h1 class="maso-pruvod-nadpis">Masopust v&nbsp;Roztokách a&nbsp;Úněticích</h1>
+        <p class="h3 maso-em">&nbsp;16.&nbsp;února&nbsp;2019</p>
 
         <h2>Středočeské muzeum v&nbsp;Roztokách</h2>
         <ul>
-            <li><strong>od 11.00</strong> <a href="/maskary" class="maso-name">Půjčování masek</a> z&nbsp;bohatého fondu Sdružení&nbsp;Roztoč (výhradně pro&nbsp;ty, kteří dojdou až&nbsp;do&nbsp;Šapitó)</li>
-            <li><strong>12.00</strong> <span class="maso-name">Slavnostní narážení Únětického Masopustního speciálu</span>;<br>začíná rej a&nbsp;hemžení maškar s&nbsp;bohatým programem – divadla, kapely, kejklíři</li>
-            <li><strong>14.00</strong> <span class="maso-name">Korunovace Královny Masopustu</span> a&nbsp;předání masopustního práva, Krásné&nbsp;fanfáry, <a href="http://localvocal.cz/">Local&nbsp;Vocal</a></li>
+            <li><strong>od 11.00</strong> <a href="/maskary" class="maso-em">Půjčování masek</a> z&nbsp;bohatého fondu Sdružení&nbsp;Roztoč (výhradně pro&nbsp;ty, kteří dojdou až&nbsp;do&nbsp;Šapitó)</li>
+            <li><strong>12.00</strong> <span class="maso-em">Slavnostní narážení Únětického Masopustního speciálu</span>;<br>začíná rej a&nbsp;hemžení maškar s&nbsp;bohatým programem – divadla, kapely, kejklíři</li>
+            <li><strong>14.00</strong> <span class="maso-em">Korunovace Královny Masopustu</span> a&nbsp;předání masopustního práva, Krásné&nbsp;fanfáry, <a href="http://localvocal.cz/">Local&nbsp;Vocal</a></li>
         </ul>
 
         <h2>Průvod městem Roztoky a&nbsp;na&nbsp;Holý&nbsp;vrch</h2>
         <ul>
             <li><a href="https://www.google.cz/maps/dir/50.1585055,14.3990066/50.1616947,14.3940287/50.1536488,14.3812738/50.151785,14.3708468/50.1614531,14.3743336/@50.1565322,14.3750353,15z/data=!3m1!4b1!4m2!4m1!3e2?hl=cs">Trasa průvodu na google mapách</a></li>
-            <li><strong>14.30</strong> <span class="maso-name">Průvod</span> ulicemi Nádražní, serpentinou a&nbsp;Kroupkou – <a href="http://www.blabuburo.cz">Bubeníci Blabuburo</a>, <a href="https://bandzone.cz/_106291?at=info">Holinky</a> a mnozí další</li>
-            <li><strong>15.00</strong> <span class="maso-name">Konopičky</span> na Tyršově&nbsp;náměstí, cesta ulicí Legií, Třešňovka</li>
-            <li><strong>16.20</strong> <span class="maso-name">Setkání průvodů</span> z&nbsp;Roztok, Únětic a&nbsp;Suchdola na&nbsp;Holém&nbsp;vrchu;<br>mávání prapory, kolové tance na prastaré pláni Holého&nbsp;vrchu, zápas medvědů, poprava Klibny</li>
+            <li><strong>14.30</strong> <span class="maso-em">Průvod</span> ulicemi Nádražní, serpentinou a&nbsp;Kroupkou – <a href="http://www.blabuburo.cz">Bubeníci Blabuburo</a>, <a href="https://bandzone.cz/_106291?at=info">Holinky</a> a mnozí další</li>
+            <li><strong>15.00</strong> <span class="maso-em">Konopičky</span> na Tyršově&nbsp;náměstí, cesta ulicí Legií, Třešňovka</li>
+            <li><strong>16.20</strong> <span class="maso-em">Setkání průvodů</span> z&nbsp;Roztok, Únětic a&nbsp;Suchdola na&nbsp;Holém&nbsp;vrchu;<br>mávání prapory, kolové tance na prastaré pláni Holého&nbsp;vrchu, zápas medvědů, poprava Klibny</li>
         </ul>
 
 
         <h2>Šapitó (u&nbsp;autobusové zastávky Roztoky, rozcestí Žalov)</h2>
 
-        <div class="maso-plate">
+        <div class="maso-excursion">
             <!-- <h2 class="h3">Vstupenky na masopustní zábavu v&nbsp;šapitó</h2> -->
             <div class="row">
                 <div class="col-md">
@@ -83,27 +79,27 @@
                 </div>
                 <div class="col-md">
                     <h3 class="h4">Předprodej</h3>
-                    <ul>
-                        <li><a href="https://goout.net/cs/jine-akce/masopustni-zabava-v-roztokach-2019/iimud/+vdbgl/"><span class="maso-name">Masopředprodej</span> probíhá přes GoOut.net.</a></li>
-                    </ul>
+                    <div class="maso-button">
+                        <a href="https://goout.net/cs/jine-akce/masopustni-zabava-v-roztokach-2019/iimud/+vdbgl/" class="maso-button-link">→ Vstupenky ←<br>→ na zábavu v šapitó ←</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <ul>
-            <li><strong>16.00</strong> <span class="maso-name">Otevřené šapitó</span> pro všechny zmrzlé, ucaprtané a&nbsp;hladové maškary</li>
-            <li><strong>18.00</strong> <span class="maso-name">Magnum Jazz Bigband</span></li>
+            <li><strong>16.00</strong> <span class="maso-em">Otevřené šapitó</span> pro všechny zmrzlé, ucaprtané a&nbsp;hladové maškary</li>
+            <li><strong>18.00</strong> <span class="maso-em">Magnum Jazz Bigband</span></li>
 
-            <li><strong>20.00</strong> <span class="maso-name">Akrobatické vystoupení</span></li>
-            <li><strong>20.30</strong> <span class="maso-name">Magnum Jazz Bigband</span></li>
-            <li><strong>21.30</strong> <span class="maso-name">Fekete Seretlek</span></li>
-            <li><strong>23.00</strong> <span class="maso-name">Baro kalo rata</span> – východoevropský folklor. Překvapení!</li>
+            <li><strong>20.00</strong> <span class="maso-em">Akrobatické vystoupení</span></li>
+            <li><strong>20.30</strong> <span class="maso-em">Magnum Jazz Bigband</span></li>
+            <li><strong>21.30</strong> <span class="maso-em">Fekete Seretlek</span></li>
+            <li><strong>23.00</strong> <span class="maso-em">Baro kalo rata</span> – východoevropský folklor. Překvapení!</li>
         </ul>
 
         <div class="row">
             <div class="card maso-mask-card">
                 <div class="card-body">
-                    <img class="card-img-top" src="img/program/bigband.jpg" alt="Magnum Jazz Bigband">
+                    <img class="card-img-top" src="/img/program/bigband.jpg" alt="Magnum Jazz Bigband">
                     <h2 class="card-title maso-mask-card-title">18.00 Magnum Jazz Bigband</h2>
                     <p class="card-text">Dynamická dvacetičlenná kapela složená z mladých muzikantů nabitých entuziasmem. Bigband hraje swing, moderní jazz, ale i funky nebo rockpopové skladby v nejrůznějších aranžmá.</p>
                     <a href="http://www.magnumjazzbigband.cz/" class="card-link">→ Magnum Jazz Bigband</a>
@@ -111,14 +107,14 @@
             </div>
             <div class="card maso-mask-card">
                 <div class="card-body">
-                    <img class="card-img-top" src="img/program/cirkus.jpg" alt="Akrobatické vystoupení – Alžběta Tichá">
+                    <img class="card-img-top" src="/img/program/cirkus.jpg" alt="Akrobatické vystoupení – Alžběta Tichá">
                     <h2 class="card-title maso-mask-card-title">20.00 Akrobatické vystoupení</h2>
                     <p class="card-text">Studenti university CODARTS – University of the Art Rotterdam and AMoC připravují představení pro roztocký Masopust pod vedením Cecile&nbsp;da&nbsp;Costa za doprovodu <a href="https://bandzone.cz/tygroo">Tygra</a> v&nbsp;<a href="https://bandzone.cz/_106291?at=info">Holinkách</a>.</p>
                 </div>
             </div>
             <div class="card maso-mask-card">
                 <div class="card-body">
-                    <img class="card-img-top" src="img/program/fekete.jpg" alt="Fekete Seretlek">
+                    <img class="card-img-top" src="/img/program/fekete.jpg" alt="Fekete Seretlek">
                     <h2 class="card-title maso-mask-card-title">21.30 Fekete Seretlek</h2>
                     <p class="card-text">Akordeon, violoncello, trumpeta, kontrabas, housle, cajon a pět hlasů. Šest hudebníků a zároveň herců, absolventů různých ročníků pražské DAMU – Divadelní Akademie Múzických Umění v Praze.</p>
                     <a href="http://feketeseretlek.cz/" class="card-link">→ Fekete Seretlek</a>

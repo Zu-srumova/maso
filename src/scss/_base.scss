@@ -1,10 +1,17 @@
 body {
     background-color: #E5D3B7;
-    background-image: url("img/grafiky/back.jpg");
+    background-image: url("/img/grafiky/back.jpg");
     background-repeat: repeat;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4, 
+.h4 {
     padding-top: 0.5em; 
     padding-bottom: 0.5em; 
     letter-spacing: 0.07em; 
@@ -14,164 +21,50 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 h1, .h1 {
     text-transform: uppercase;
+    font-size: 2rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+    }
+}
+
+h2, .h2 {
+    font-size: 1.75rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+    }
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.75rem;
+    }
+}
+
+h4, .h4 {
+    font-size: 1.25rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
 }
 
 p {
     line-height: 1.65em;
 }
 
-.maso-name {
+.maso-em,
+.maso-em a {
     font-weight: 700;
     color: #C90027;
-}
-
-.maso-name a {
-    font-weight: 700;
-    color: #C90027;
-}
-
-/* Navigace nahoře*/
-
-.maso-nav-lista {
-    background-color: #212529;
-}
-
-.navbar-toggler {
-    
-    &:hover,
-    &:focus,
-    &:active, 
-    &.active {
-        border: 1px solid #E5D3B7;
-        outline: none;
-    }
-}
-
-.nav-link {
-    color: #E5D3B7;
-    font-weight: 700;
-    font-size: 0.8rem;
-    font-family: "Roboto Slab", serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    
-
-    &:hover,
-    &:focus,
-    &:active, 
-    &.active {
-        color: #C90027;
-        border: none;
-        outline: none;
-    }
-
-    @media only screen and (min-width:992px) {
-        font-size: 1rem;
-        margin-left: 0.85em;
-    }
-    
-    @media only screen and (min-width:1200px) {
-        font-size: 1.25rem;
-    }
-}
-
-.maso-header-img-cont {
-    overflow: hidden;
-    max-height: 80vh;
-    display: flex;
-    align-items: center;
-}
-
-.maso-anotace {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.maso-plate {
-    background-color: RGBA(256,256,256,0.2);
-    border: 1px dotted #fff;
-    padding: 0 1em;
-    margin: 2rem;
-}
-
-.maso-mask-card {
-    width: 22rem;
-    border: 0;
-    background-color: RGBA(232,211,184,0)
-
-}
-
-.maso-mask-card-title {
-    font-size: 1.25rem;
-    padding-bottom: 0;
-}
-
-.maso-contact-name {
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-
-/*Footer s logama */
-
-.maso-sekce-loga {
-    background-color: #212529;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.maso-sekce-loga h2 {
-    color: #E5D3B7;
-    font-size: 1.25rem;
-    font-weight: 700;
-    font-family: "Roboto Slab", serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-top: 2em;
-}
-
-.maso-sekce-loga p {
-    margin: 0;
-    padding-bottom: 0.5em;
-    color: #E5D3B7;
-}
-
-.maso-sekce-loga a {
-    color: #E5D3B7;
-}
-
-.maso-footer {
-    background-color: #E5D3B7;
-}
-
-.maso-logo-card {
-    background-color: #E5D3B7;
-    border: solid 0px;
-    padding-left: 2em;
-}
-
-.maso-print {
-    display: none;
-    padding-top: 2rem;
-}
-
-#maso-pruvod-nadpis {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-@media only screen and (max-width:992px) {
-    .navbar {
-        position: relative;
-    }
 }
 
 @media print {
-    .maso-header-img, .maso-sekce-loga, .maso-no-print {
+    .maso-header-img, 
+    .maso-sekce-loga {
         display: none;
     }
-
-    .maso-print {
-        display: block;
-    }
-  }
+}

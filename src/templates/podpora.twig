@@ -3,12 +3,9 @@
 {% block og %}
     <meta property="og:image" content="http://masopust.roztoc.cz/img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_966.jpg">
     <meta property="og:title" content="Připojte se k Masopustu!">
-    <meta property="og:description" content="Masopust organizuje skupina dobrovolníků, což je při akci pro několik tisíc lidí docela výzva. Máme nadšení a zkušenosti, ale uvítáme jakoukoliv pomoc. Zapojit se můžete i&nbsp;vy.">
-    <meta property="og:type" content="website">
-    <meta property="fb:app_id" content="123456789">
+    <meta property="og:description" content="Masopust organizuje skupina dobrovolníků, což je při akci pro několik tisíc lidí docela výzva. Máme nadšení a zkušenosti, ale uvítáme jakoukoliv pomoc. Zapojit se můžete i vy.">
     <meta property="og:url" content="http://masopust.roztoc.cz/podpora">
-    <meta name="twitter:card" content="summary">
-{% endblock %}
+    {% endblock %}
 
 {% block title %}Zapojte se a&nbsp;podpořte nás!{% endblock %}
 
@@ -28,23 +25,40 @@
         (min-width: 576px) 510px, 
         calc(100vw-30px)"
         srcset="
-        img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_300.jpg 300w,
-        img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_678.jpg 678w,
-        img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_966.jpg 966w,
-        img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_1191.jpg 1191w,
-        img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_1359.jpg 1359w,
-        img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_1600.jpg 1600w"
-        alt="Maškary roztockého Masopustu na Holém vrchu" class="img-fluid maso-header-img">
-    <img src="img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_966.jpg" alt="Maškary roztockého Masopustu na Holém vrchu" class="img-fluid maso-header-img">
+       /img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_300.jpg 300w,
+       /img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_678.jpg 678w,
+       /img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_966.jpg 966w,
+       /img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_1191.jpg 1191w,
+       /img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_1359.jpg 1359w,
+       /img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_1600.jpg 1600w"
+        src="/img/ilustracni/vit-svajcr-holak_ms4hti_c_scale,w_966.jpg" alt="Maškary roztockého Masopustu na Holém vrchu" class="img-fluid maso-header-img">
 </div>
 
+{% block text %}
 <h1>Zapojte se a&nbsp;podpořte nás!</h1>
 <p class="maso-anotace">Masopust organizuje skupina dobrovolníků, což je při akci pro několik tisíc lidí docela výzva.<br>Máme nadšení a&nbsp;zkušenosti, ale uvítáme jakoukoliv pomoc. Zapojit se můžete i&nbsp;vy.</p>
-<ul>
-    <li><strong>Pojďte do toho s námi!</strong> Každý rok sháníme dobrovolníky na přípravné práce, produkci, do masek… Budeme rádi za každou ruku navíc.<br>Ozvěte se na <a href="mailto:masopust@roztoc.cz">masopust@roztoc.cz</a>, děkujeme!</li>
-    <li><strong>Přispějte nám!</strong> Jde to snadno přes Darujme.cz. Masopust se snažíme dělat co nejlevnější, ale dost toho prostě platit musíme… největší položkou je technické zajištění a&nbsp;šapitó, kde jsme rádi za každou korunu.<br>Ať přispějete přes darujme.cz nebo přímo na náš účet 2000577036/2010 (FIO), vystavíme vám potvrzení o&nbsp;daru pro odečet daní.<br>Rozpočet Masopustu naleznete níže.</li>
-    <li><strong>Darujte nám nějaký materiál na tvorbu nebo dar do tomboly!</strong> Využijeme skoro cokoliv. Kontaktovat můžete Ditu Votavovou, <a href="tel:775889940">775&nbsp;889&nbsp;940</a>, <a href="mailto:masopust@roztoc.cz">masopust@roztoc.cz</a>.</li>
-</ul>
+
+<div class="row">
+    <div class="col-sm">
+        <h2 class="h3">Pojďte do toho</h2>
+        <p>Každý rok sháníme dobrovolníky na přípravné práce, produkci, do masek… Budeme rádi za každou ruku navíc.</p>
+        <p>Ozvěte se na <a href="mailto:masopust@roztoc.cz">masopust@roztoc.cz</a>.</p>
+        <p>Děkujeme!</p>
+    </div>
+    <div class="col-sm">
+        <h2 class="h3">Přispějte</h2>
+        <p>Jde to snadno přes <a href="https://www.darujme.cz/projekt/1201494">Darujme.cz</a>. Masopust se snažíme dělat co nejlevnější, ale dost toho prostě platit musíme… největší položkou je technické zajištění a&nbsp;šapitó, kde jsme rádi za každou korunu.</p>
+        <p class="small">Ať přispějete přes darujme.cz nebo přímo na náš účet 2000577036/2010 (FIO), vystavíme vám potvrzení o&nbsp;daru pro odečet ze základu daně.</p>
+    </div>
+    <div class="col-sm">
+        <h2 class="h3">Darujte</h2>
+        <p>Darujte nám nějaký materiál na tvorbu nebo dar do tomboly! Využijeme skoro cokoliv. Kontaktovat můžete Ditu Votavovou, <a href="tel:775889940">775&nbsp;889&nbsp;940</a>, <a href="mailto:masopust@roztoc.cz">masopust@roztoc.cz</a>.</p>
+    </div>
+</div>
+
+<div class="maso-button">
+    <a href="https://www.darujme.cz/projekt/1201494" class="maso-button-link">→ Podpořte Roztocký Masopust ←</a>
+</div>
 
 <h2>Kolik Masopust stojí?</h2>
 <p>Co jde, děláme na masopustu dobrovolnicky – od dopravy věcí přes vytváření masek po řízení průvodu.<br>Stále ale zbývá spousta věcí, které prostě dobrovolnicky dělat nejdou.</p>
@@ -61,7 +75,7 @@
     </ul>
 <p>V nákladech není započítána hodnota věcných darů, dobrovolnické práce, organizačního zajištění, telefonů, pronájmu prostor pro organizaci, řízení dopravy, pečení, prodej, organizace, fotodokumentace, výroby masek a&nbsp;kostýmů.</p>
 
-<div class="maso-plate">
+<div class="maso-excursion">
     <h3 class="h4">Jak to vypadalo loni</h3>
     <p>6000&nbsp;návštěvníků – 180&nbsp;dobrovolníků – 2500&nbsp;odpracovaných dobrovolnických hodin</p>
 
@@ -94,4 +108,5 @@
         </div>
     </div>
 </div>
+{% endblock %}
 {% endblock %}
