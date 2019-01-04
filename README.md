@@ -1,4 +1,14 @@
-# A basic template to develop a website based on Bootstrap 4
+# MASOWEB
+Web roztockého Masopustu. Protože
+- byl potřeba,
+- já potřebovala nějaký cvičný projekt, na kterém si budu zkoušet věci.
+
+Publikovaný je na http://masopust.roztoc.cz.
+
+Je to založené na Bootstrapu, viz níže.
+
+
+## A basic template to develop a website based on Bootstrap 4
 
 Includes:
 
