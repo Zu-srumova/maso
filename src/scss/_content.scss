@@ -7,19 +7,46 @@
 
 .maso-anotace {
     font-weight: 700;
-    @media only screen and (min-width:576px) {
+    @include media-breakpoint-up(sm) {
     font-size: 1.2rem;
     }
 }
 
 .maso-button {
     max-width: 30em;
+    padding: 0.5rem;
     background-color: #212529;
-    color: #E5D3B7;
-    text-transform: uppercase;
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.maso-button-link { // Odpovídá formátu nav-linku, ale není to nav-link, páč to nejni navigace.
+    color: #E5D3B7;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus,
+    &:active, 
+    &.active {
+        color: #C90027;
+        border: none;
+        outline: none;
+        text-decoration: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+        margin-left: 0.85em;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        font-size: 1.25rem;
+    }
 }
 
 .maso-excursion {
@@ -28,10 +55,11 @@
     padding: 0 1em;
     margin: 0.5rem;
 
-    @media only screen and (min-width:768px) {
+    @include media-breakpoint-up(md) {
         margin: 2rem;
     }
 }
+
 
 .maso-mask-card {
     width: 22rem;
