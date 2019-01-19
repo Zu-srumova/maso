@@ -36,9 +36,15 @@
         outline: none;
     }
 
+    @include media-breakpoint-up(md) {
+        font-size: 0.85rem;
+        margin-left: 0.6em;
+        padding: 5px;
+    }
+
     @include media-breakpoint-up(lg) {
         font-size: 1rem;
-        margin-left: 0.85em;
+        margin-left: 0.8em;
     }
     
     @include media-breakpoint-up(xl) {
