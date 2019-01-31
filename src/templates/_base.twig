@@ -34,6 +34,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta name="google-site-verification" content="2jDLnJzsdIkZIaCENYCZfPuXXwhtN28ptzb8V-zFWlM" />
+    <meta name="seznam-wmt" content="BX37VoQOdGdtfrCk4OfUQdwD3yMzifzS" />
+
 
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -77,20 +79,30 @@
         <div class="container">
             {% block organizers %}
                 <h2>Masopust pořádá <a href="http://www.roztoc.cz/">Sdružení&nbsp;Roztoč, z.s.</a></h2>
-                <p class="pb-4">…ve spolupráci s&nbsp;<a href="https://www.roztoky.cz/">městem&nbsp;Roztoky</a>, <a href="https://www.muzeum-roztoky.cz">Středočeským&nbsp;muzeem v&nbsp;Roztokách u&nbsp;Prahy</a>, <a href="http://www.unetice.cz/">obcí&nbsp;Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">Městskou částí Praha-Suchdol.</a></p>
+                <p class="pb-4">…v partnerství s&nbsp;<a href="https://www.roztoky.cz/">městem&nbsp;Roztoky</a> a&nbsp;ve&nbsp;spolupráci se&nbsp;<a href="https://www.muzeum-roztoky.cz">Středočeským&nbsp;muzeem v&nbsp;Roztokách u&nbsp;Prahy</a>, <a href="http://www.unetice.cz/">obcí&nbsp;Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">MČ Praha-Suchdol.</a></p>
             {% endblock %}
 
             <div class="row maso-footer align-items-center">
-                <a href="http://www.roztoc.cz" class="col-xs-1 text-center p-3 pr-5"><img src="/svg/roztoc.min.svg" width="120" alt="logo Sdružení Roztoč"></a>
-                <a href="http://www.roztoky.cz" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/roztoky.min.svg" width="70" alt="logo města Roztoky"></a>
-                <a href="https://www.muzeum-roztoky.cz" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/logo-muzeum.svg" width="220" alt="logo Středočeského muzea v Roztokách u Prahy"></a>
-                <a href="http://www.unetice.cz/" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/un.min.svg" width="60" alt="logo obce Únětice"></a>
-                <a href="https://www.praha-suchdol.cz/" class="col-xs-1 maso-partner text-center p-3"><img src="/svg/suchdol.min.svg" width="300" alt="logo městské části Praha–Suchdol"></a>
+                <a href="http://www.roztoc.cz" class="col-xs-1 text-center p-3 pr-5"><img src="/loga/roztoc.min.svg" width="120" alt="logo Sdružení Roztoč"></a>
+                <a href="http://www.roztoky.cz" class="col-xs-1 maso-opa text-center p-3"><img src="/loga/roztoky.min.svg" width="70" alt="logo města Roztoky"></a>
+                <a href="https://www.muzeum-roztoky.cz" class="col-xs-1 maso-opa text-center p-3"><img src="/loga/logo-muzeum.svg" width="220" alt="logo Středočeského muzea v Roztokách u Prahy"></a>
+                <a href="http://www.unetice.cz/" class="col-xs-1 maso-opa text-center p-3"><img src="/loga/un.min.svg" width="60" alt="logo obce Únětice"></a>
+                <a href="https://www.praha-suchdol.cz/" class="col-xs-1 maso-opa text-center p-3"><img src="/loga/suchdol.min.svg" width="300" alt="logo městské části Praha–Suchdol"></a>
             </div>
 
             {% block sponsors %}   
                 <h2>Masopust podpořili</h2>
-                <p class="pb-4"><a href="https://m.prg.aero">Letiště Václava Havla Praha</a>, <a href="https://www.kr-stredocesky.cz/">Středočeský kraj</a>, <a href="http://www.roztoky.cz">město Roztoky</a>, <a href="https://www.prague-catering.cz/">Prague Catering</a>, <a href="http://blahasro.cz">Bláha, s.r.o.</a>, <a href="www.k2m.cz">K2M reklama</a>, <a href="http://thingumajig.info/">Andrew Kim &amp; Thingumajig Theatre</a> a mnoho dalších dárců a pomocníků.</p>
+                <p class="pb-4">
+                    <a href="http://www.roztoky.cz">Město Roztoky</a>, 
+                    <a href="https://m.prg.aero">Letiště Václava Havla Praha</a>, 
+                    <a href="https://www.kr-stredocesky.cz/">Středočeský kraj</a>, 
+                    <a href="https://www.prague-catering.cz/">Prague Catering</a>, 
+                    <a href="http://blahasro.cz">Bláha, s.r.o.</a>, 
+                    <a href="https://www.k2m.cz/">K2M&nbsp;reklama</a>, 
+                    <a href="https://www.unetickypivovar.cz/">Únětický pivovar</a>, 
+                    <a href="http://mlejn.cz/">KD Mlejn, o.p.s.</a>, 
+                    <a href="http://thingumajig.info/">Andrew Kim &amp;&nbsp;Thingumajig Theatre</a> 
+                    a mnoho dalších dárců a pomocníků.</p>
             {% endblock %}
 
         {% block loga %}

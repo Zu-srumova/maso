@@ -6,6 +6,7 @@
     <a class="nav-link {% if active=='schedule' %}active{% endif %}" href="/schedule">Schedule</a>
     <a class="nav-link {% if active=='masks' %}active{% endif %}" href="/masks">Masks</a>
     <a class="nav-link {% if active=='about' %}active{% endif %}" href="/about">About</a>
+    <a class="nav-link {% if active=='about' %}active{% endif %}" href="/gallery">Gallery</a>
     <a class="nav-link {% if active=='support' %}active{% endif %}" href="/support">Join us</a>
     <a class="nav-link {% if active=='contact' %}active{% endif %}" href="/contact">Contact</a>
 {% endblock %}
@@ -16,10 +17,22 @@
 
 {% block organizers %}
     <h2>Masopust (Mardi Gras) is organized by <a href="http://www.roztoc.cz/">Sdružení&nbsp;Roztoč,&nbsp;z.s.</a></h2>
-    <p class="pb-4">…together with <a href="https://www.roztoky.cz/">the town of&nbsp;Roztoky</a>, <a href="https://www.muzeum-roztoky.cz">Central Bohemian Museum &nbsp;Roztoky u&nbsp;Prahy</a>, <a href="http://www.unetice.cz/">the village of Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">Prague-Suchdol.</a></p>
+    <p class="pb-4">in a partnership with <a href="https://www.roztoky.cz/">the town of&nbsp;Roztoky</a> and together with <a href="https://www.muzeum-roztoky.cz">Central Bohemian Museum &nbsp;Roztoky u&nbsp;Prahy</a>, 
+        <a href="http://www.unetice.cz/">the village of Únětice</a> a&nbsp;
+        <a href="https://www.praha-suchdol.cz/">Prague-Suchdol.</a></p>
 {% endblock %}
 
 {% block sponsors %}   
     <h2>Sponsored by</h2>
-    <p class="pb-4"><a href="https://m.prg.aero">Václav Havel Airport Prague</a>, <a href="https://www.kr-stredocesky.cz/">Central Bohemian Region</a>, <a href="http://www.roztoky.cz">Town of&nbsp;Roztoky</a>, <a href="https://www.prague-catering.cz/">Prague Catering</a>, <a href="http://blahasro.cz">Bláha,&nbsp;s.r.o.</a>, <a href="www.k2m.cz">K2M&nbsp;reklama</a>, <a href="http://thingumajig.info/">Andrew&nbsp;Kim &amp;&nbsp;Thingumajig Theatre</a> and&nbsp;many&nbsp;more.</p>
+    <p class="pb-4">
+        <a href="http://www.roztoky.cz">Town of&nbsp;Roztoky</a>, 
+        <a href="https://m.prg.aero">Václav Havel Airport Prague</a>, 
+        <a href="https://www.kr-stredocesky.cz/">Central Bohemian Region</a>, 
+        <a href="https://www.prague-catering.cz/">Prague Catering</a>, 
+        <a href="http://blahasro.cz">Bláha,&nbsp;s.r.o.</a>, 
+        <a href="https://www.k2m.cz/">K2M&nbsp;reklama</a>, 
+        <a href="https://www.unetickypivovar.cz/">Brewery of Únětice</a>, 
+        <a href="http://mlejn.cz/">KD Mlejn, o.p.s.</a>, 
+        <a href="http://thingumajig.info/">Andrew&nbsp;Kim &amp;&nbsp;Thingumajig Theatre</a> 
+        and&nbsp;many&nbsp;more.</p>
 {% endblock %}
