@@ -51,7 +51,7 @@
 .maso-excursion {
     background-color: RGBA(256,256,256,0.2);
     border: 1px dotted #fff;
-    padding: 0 1em;
+    padding: 0 1em 1em;
     margin: 0.5rem;
 
     @include media-breakpoint-up(md) {
