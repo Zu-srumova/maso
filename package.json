@@ -16,7 +16,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-surge": "^0.1.0",
+    "gulp-surge": "^0.1.3",
     "gulp-twig": "^1.2.0",
     "gulp-watch": "^5.0.1",
     "postcss-flexbugs-fixes": "^4.1.0",
@@ -37,7 +37,9 @@
   "author": "Daniel Srb",
   "license": "MIT",
   "description": "A basic template to start a website based on Bootstrap",
-  "dependencies": {},
+  "dependencies": {
+    "photoswipe": "^4.1.3"
+  },
   "browserslist": [
     "last 1 major version",
     ">= 1%",
