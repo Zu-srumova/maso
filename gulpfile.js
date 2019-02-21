@@ -165,5 +165,20 @@ gulp.task(
     })
 );
 
+// Generate some images
+gulp.task(
+    "resize-large", function(){
+        return gulp.src( 'content/**/*.+(jpeg|jpg|png|tiff|webp)' )
+          .pipe(gulpSharp({
+            resize : [1280, 800],
+            max : true,
+            quality : 60,
+            progressive : true
+          }))
+          .pipe(gulp.dest('output'));
+       
+      });
+
+
 // Set develop as a default task (Gulp runs this when you don't specify a task)
 gulp.task("default", gulp.series("develop"));
