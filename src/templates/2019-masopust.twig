@@ -1,0 +1,43 @@
+{% extends '_base.twig' %}
+
+{% block js_head %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block og %}
+    <meta property="og:image" content="http://masopust.roztoc.cz/img/galerie/2019-masopust/600/2019-masopust06.jpg">
+    <meta property="og:title" content="Roztocký Masopust 2019 – průvod">
+    <meta property="og:description" content="Fotografie z Roztockého Masopustu. Máte nějaké vlastní? Pošlete nám je!">
+    <meta property="og:url" content="http://masopust.roztoc.cz/galerie/2019-masopust">
+    {% endblock %}
+
+{% block title %}Galerie 2019{% endblock %}
+
+{% block nav %}
+    {% include '__nav.twig' with {'active': 'galerie'} %}
+{% endblock %}
+
+
+{% block content %}
+
+{% block text %}
+<p class="mt-4">← <a href="galerie">Galerie</a></p>
+
+<h1>Masopustní průvod 2019</h1>
+
+<div class="row">
+    {% for i in 1..67 %}
+    {% set num %}{% if i < 10 %}0{% endif %}{{ i }}{% endset %}
+    <div class="card maso-foto-card">
+        <div class="card-body">
+            <a data-fancybox="2019-masopust" href="/img/galerie/2019-masopust/600/2019-masopust{{ num }}.jpg" data-srcset="/img/galerie/2019-masopust/2019-masopust{{ num }}.jpg 2048w, /img/galerie/2019-masopust/1800/2019-masopust{{ num }}.jpg 1800w, /img/galerie/2019-masopust/1200/2019-masopust{{ num }}.jpg 1200w, /img/galerie/2019-masopust/600/2019-masopust{{ num }}.jpg 600w, /img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg 320w" data-caption="Masopust 2019 (foto Vít Švajcr)">
+                <img class="card-img-top" src="/img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg" alt="alternativní text je v indispozici">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+{% endblock %}
