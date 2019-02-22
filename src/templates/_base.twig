@@ -9,7 +9,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-131130545-1');
     </script>
 
@@ -17,8 +16,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Průvod mezi nebem a zemí, údolím a vrchem, minulostí a budoucností vyráží opět za svou královnou. Maškary se v poledne setkají na roztockém zámku, spojí s Únětickými a Suchdolskými tancem na pláni Holého vrchu a zakončí svou cestu zábavou v pravém a nefalšovaném vyhřívaném šapitó.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:700&amp;subset=latin-ext" rel="stylesheet">
+
+    {% block js_head %}{% endblock %}
 
     <meta property="og:type" content="website">
     <meta property="fb:app_id" content="123456789">
@@ -77,6 +79,9 @@
     
     <div class="maso-sekce-loga" role="complementary">
         <div class="container">
+            <div class="maso-fb-div">
+                <a href="https://www.facebook.com/events/697867023946747/permalink/748480122218770"><img src="/loga/fb.svg" alt="Masopust na Facebooku" width="50px" class="maso-fb"></a>
+            </div>
             {% block organizers %}
                 <h2>Masopust pořádá <a href="http://www.roztoc.cz/">Sdružení&nbsp;Roztoč, z.s.</a></h2>
                 <p class="pb-4">…v partnerství s&nbsp;<a href="https://www.roztoky.cz/">městem&nbsp;Roztoky</a> a&nbsp;ve&nbsp;spolupráci se&nbsp;<a href="https://www.muzeum-roztoky.cz">Středočeským&nbsp;muzeem v&nbsp;Roztokách u&nbsp;Prahy</a>, <a href="http://www.unetice.cz/">obcí&nbsp;Únětice</a> a&nbsp;<a href="https://www.praha-suchdol.cz/">MČ Praha-Suchdol.</a></p>
@@ -98,11 +103,13 @@
                     <a href="https://www.kr-stredocesky.cz/">Středočeský kraj</a>, 
                     <a href="https://www.prague-catering.cz/">Prague Catering</a>, 
                     <a href="http://blahasro.cz">Bláha, s.r.o.</a>, 
+                    <a href="http://www.eaton.cz/Czech/index.htm">Eaton Corporation</a>, 
                     <a href="https://www.k2m.cz/">K2M&nbsp;reklama</a>, 
                     <a href="https://www.unetickypivovar.cz/">Únětický pivovar</a>, 
                     <a href="http://mlejn.cz/">KD Mlejn, o.p.s.</a>, 
-                    <a href="http://thingumajig.info/">Andrew Kim &amp;&nbsp;Thingumajig Theatre</a> 
-                    a mnoho dalších dárců a pomocníků.</p>
+                    <a href="http://thingumajig.info/">Andrew Kim &amp;&nbsp;Thingumajig Theatre</a>, 
+                    <a href="https://www.pohl.cz/">Pohl CZ, a.s.</a> 
+                    a <a href="/podpora#seznam-darcu">mnoho dalších dárců</a> a pomocníků.</p>
             {% endblock %}
 
         {% block loga %}
@@ -113,8 +120,7 @@
     </div>
     
         
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 {# <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> #}
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 {# <script src="js/custom.js"></script> #}

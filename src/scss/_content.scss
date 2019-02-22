@@ -51,7 +51,7 @@
 .maso-excursion {
     background-color: RGBA(256,256,256,0.2);
     border: 1px dotted #fff;
-    padding: 0 1em;
+    padding: 0 1em 1em;
     margin: 0.5rem;
 
     @include media-breakpoint-up(md) {
@@ -68,6 +68,12 @@
 .maso-mask-card-title {
     font-size: 1.25rem;
     padding-bottom: 0;
+}
+
+.maso-foto-card {
+    width: 14.25rem;
+    border: 0;
+    background-color: RGBA(232,211,184,0)
 }
 
 .maso-contact-name {
