@@ -22,17 +22,30 @@
 {% block content %}
 
 {% block text %}
-<p class="mt-4">← <a href="galerie">Galerie</a></p>
 
 <h1>Masopustní průvod 2019</h1>
+<p>← <a href="galerie">Galerie</a></p>
 
 <div class="row">
+    {# Fotky Vítka Švajcra #}
     {% for i in 1..67 %}
     {% set num %}{% if i < 10 %}0{% endif %}{{ i }}{% endset %}
     <div class="card maso-foto-card">
         <div class="card-body">
             <a data-fancybox="2019-masopust" href="/img/galerie/2019-masopust/600/2019-masopust{{ num }}.jpg" data-srcset="/img/galerie/2019-masopust/2019-masopust{{ num }}.jpg 2048w, /img/galerie/2019-masopust/1800/2019-masopust{{ num }}.jpg 1800w, /img/galerie/2019-masopust/1200/2019-masopust{{ num }}.jpg 1200w, /img/galerie/2019-masopust/600/2019-masopust{{ num }}.jpg 600w, /img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg 320w" data-caption="Masopust 2019 (foto Vít Švajcr)">
-                <img class="card-img-top" src="/img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg" alt="alternativní text je v indispozici">
+                <img class="card-img-top" src="/img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg" alt="Fotka od Vítka Švajcra z Masopustu 2019, krásná a nepopsatelná.">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+    {# Fotky Kuby Sedláka #}
+    {% for i in 68..91 %}
+    {% set num %}{% if i < 10 %}0{% endif %}{{ i }}{% endset %}
+    <div class="card maso-foto-card">
+        <div class="card-body">
+            <a data-fancybox="2019-masopust" href="/img/galerie/2019-masopust/600/2019-masopust{{ num }}.jpg" data-srcset="/img/galerie/2019-masopust/2019-masopust{{ num }}.jpg 2048w, /img/galerie/2019-masopust/1800/2019-masopust{{ num }}.jpg 1800w, /img/galerie/2019-masopust/1200/2019-masopust{{ num }}.jpg 1200w, /img/galerie/2019-masopust/600/2019-masopust{{ num }}.jpg 600w, /img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg 320w" data-caption="Masopust 2019 (foto Jakub Sedlák)">
+                <img class="card-img-top" src="/img/galerie/2019-masopust/thumb/2019-masopust{{ num }}.jpg" alt="Fotka od Kuby Sedláka z Masopustu 2019, krásná a nepopsatelná.">
             </a>
         </div>
     </div>
