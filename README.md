@@ -3,26 +3,11 @@ Web roztockého Masopustu. Protože
 - byl potřeba,
 - já potřebovala nějaký cvičný projekt, na kterém si budu zkoušet věci.
 
+Návrh nebyl, je to nějaká má improvizace.
+
 Publikovaný je na http://masopust.roztoc.cz.
 
 Je to založené na Bootstrapu, viz níže.
-
-
-## A basic template to develop a website based on Bootstrap 4
-
-Includes:
-
-- **Bootstrap 4**: build responsive, mobile-first projects on the web with the world's most popular front-end component library
-- **Gulp 4**: task runner for running all of the following
-- **Sass compilation**: leverage the power of the most popular CSS extension language
-- **Sourcemaps** generation for easier Sass debugging
-- **Browsersync**: automatically reloads (or injects in case of CSS), browsers' when you change files 
-- **Autoprefixer**: parses CSS and adds vendor prefixes according to [caniuse.com]()
-- **UnCSS**: removes unused styles from CSS
-- **Flexbugs fixes**: automatically fixes some of the [flexbugs](https://github.com/philipwalton/flexbugs) 
-- **CSSO**: CSS minifier with structural optimizations
-- **Twig.js**: JavaScript implementation of the Twig PHP templating language
-- **Surge.sh**: deploy static websites easily and for free
 
 
 ## First time installation
@@ -96,15 +81,3 @@ See `browserslist` in `package.json` for supported browsers.
 ### Deployment
 
 Upload everything in `/dist/` folder to the server.
-
-#### Surge.sh
-
-You can use [surge.sh](https://surge.sh) free service for that.
-
-1. Install surge client `npm install --global surge`.
-1. Run `surge` manually once in `/dist`: you will create an account with surge.sh.
-1. Set your own domain in `gulpfile.js` (replace `https://my-first-website.surge.sh`).
-1. From now on run `npm run deploy` whenever you want to publish a new version.
-
-If you want multiple people to be able to deploy to the same domain, run `surge --add mail.your.collaborator.used.to.register.with.surge@example.com` for each.
- 
