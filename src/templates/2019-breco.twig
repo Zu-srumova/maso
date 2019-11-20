@@ -1,0 +1,42 @@
+{% extends '_base.twig' %}
+
+{% block js_head %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block og %}
+    <meta property="og:image" content="http://masopust.roztoc.cz/img/galerie/2019-breco/1200/2019-breco08.jpg">
+    <meta property="og:title" content="Roztocký Masopust 2019 – BREĈO">
+    <meta property="og:description" content="Fotografie artistického vystoupení Feel the Universe.">
+    <meta property="og:url" content="http://masopust.roztoc.cz/galerie/2019-breco">
+    {% endblock %}
+
+{% block title %}Masopust 2019 – BREĈO{% endblock %}
+
+{% block nav %}
+    {% include '__nav.twig' with {'active': 'galerie'} %}
+{% endblock %}
+
+{% block content %}
+
+{% block text %}
+
+<h1>BREĈO</h1>
+<p>← <a href="galerie">Galerie</a></p>
+
+<div class="row">
+    {# Fotky Kuby Součka #}
+    {% for i in 1..11 %}
+    {% set num %}{% if i < 10 %}0{% endif %}{{ i }}{% endset %}
+    <div class="card maso-foto-card">
+        <div class="card-body">
+            <a data-fancybox="2019-breco" href="/img/galerie/2019-breco/600/2019-breco{{ num }}.jpg" data-srcset="/img/galerie/2019-breco/2019-breco{{ num }}.jpg 2048w, /img/galerie/2019-breco/1800/2019-breco{{ num }}.jpg 1800w, /img/galerie/2019-breco/1200/2019-breco{{ num }}.jpg 1200w, /img/galerie/2019-breco/600/2019-breco{{ num }}.jpg 600w, /img/galerie/2019-breco/thumb/2019-breco{{ num }}.jpg 320w" data-caption="BREĈO – Feel the Universe (foto Jakub Souček)">
+                <img class="card-img-top" src="/img/galerie/2019-breco/thumb/2019-breco{{ num }}.jpg" alt="Fotka od Jakuba Součka ze zkoušky artistického vystoupení BREĈO, krásná a nepopsatelná.">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
+{% endblock %}
